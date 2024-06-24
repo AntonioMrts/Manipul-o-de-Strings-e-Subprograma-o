@@ -9,3 +9,12 @@ String nova: "parcela"
 Resultado a ser impresso no programa principal: "Quem parte e reparte
 fica com a maior parcela"
 '''
+
+frase = "Quem parte e reparte fica com a maior parte"
+string_antiga = "parte"
+string_nova = "parcela"
+
+partes = frase.rpartition(string_antiga)
+frase_modificada = partes[0] + string_nova + partes[2]
+
+print(f"Resultado: {frase_modificada}")
